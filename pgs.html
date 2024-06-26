@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Payment</title>
+<style>
+    body{background-color: rgb(255, 255, 1);}
+
+.h{color:red; margin-left: 500px; }
+h2{color:red;}
+h3{color:red;margin-left: 300px;}
+
+.l{ border-radius: 50%;
+    height: 265px;
+    margin-left: 460px;}
+
+.UPI{ margin-left: 150px;}
+
+.gp{margin-left: 200px;}
+
+.p{margin-right: 60px;}
+
+.pp{margin-left: 150px;}
+
+.r{ color: yellowgreen;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 30px;}
+
+.pn{ color: yellowgreen;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 30px;
+margin-left: 1099PX;}
+  
+.i1{
+    height: 226px
+}
+.i2{
+    margin-top: -279px;
+    margin-left: 900px
+}
+.pp{margin-top: 0px;}
+
+
+.pi{margin-left: 430px;}
+</style>
+
+</head>
+<body >
+<form>
+    <h1 class="h"> PAYMENT    GATEWAY   SITE</h1>
+   
+     <img class ="l" src="./l1.jpeg">
+     
+
+        <h2>IMPORTANT</h2>
+        <b>TO MAKE SURE YOU DO YOU PAYMENTS WITHOUT ANY PROBLEM ,KINDLY MAKE SURE THAT ALL THE DETAILS WHICH
+            ARE ARE MENTIONED ARE CORRECTLY FILLED.MAKE SURE ALL THE DETAILS YOU HAVE ENTERED ARE CORRECT.THEN
+            PROCEED.THANKS YOU.</b>
+
+                <b><p>REQUIRED FIELDS*</p></b>
+
+                <h2 class="PI">PERSONAL INFORMATION</h2>
+
+                <img class ="pi" src="./PI.jpg">
+
+                <p>Name:* <input type="text" name="name" id="name"  pattern="[A-Za-z\s]{1,}"
+                    title="ENTER IN CAPITAL LETTERS" required></p>
+
+               
+                    *GENDER
+                   <input type="radio" name="gender" id="male" value="MALE">MALE
+                   <input type="radio" name="gender" id="female" value="FEMALE" required>FEMALE<br>
+        
+
+
+                ADDRESS:<br><textarea name="address" id="address" 
+               style="margin: 0px; width: 1302px; height: 129px;"></textarea>
+
+                <p>Email*:<input type="email" name="email" id="email" required>
+
+                <p>PINCODE*:<input type="text" name="PINCODE" id="PINCODE"  pattern="[0-9]{6}"
+                    title="PINCODE MUST BE OF 6 DIGITS" 
+                    required></p>
+
+                <h2 class="CI">PAYMENT INFORMATION</h2>
+                <img src="./VISA.JPG">
+                <img class ="UPI" src="./UPI.png">
+                <img class ="gp" src="./gp.png">
+                <img class ="p" src="./pt.png">
+                <img class ="pp" src="./pp.png">
+
+
+                <p class="Payment">PAYMENT TYPE
+                    <select name="CARD-TYPE" name="CARD TYPE" id="card type" required>
+                        <option value="">SELECT PAYMENT-OPTION</option>
+                        <option value="VISA">VISA</option>
+                        <option value="PAYTM">RUPAY</option>
+                        <option value="DEBIT">DEBIT CARD</option>
+                        <option value="CREDIT">CREDIT CARD</option>
+                       <option value="GPAY">GPAY</option>
+                       <option value="UPI ID">UPI ID</option>
+                    </select>
+                </p>
+                <p> ACCOUNT NO.:*<input type="text" name="card number" id="card number" pattern="[0-9]{16}"
+                    title="ACCOUNT NO. MUST BE OF 16 DIGITS" 
+                    required></p>
+            
+                <p> EXPIRY DATE:*<input type="date" name="exp date" id="exp date" required></p>
+
+                <p> CVV NO.:*<input type="password" name="CVV" id="CVV" pattern="[0-9]{3}"
+                    title="CVV MUST BE 3 DIGITS" 
+                    required></p>
+
+                <input type="checkbox" required> TERMS AND CONDITIONS:
+                    WE DO NOT COLLECT YOUR DATA.IF FOR SOME USER FOUND GULITY USING WRONG ATTEMPTS THEY IN THAT CASE IF
+                    BANK BLOCK THE ACCOUNT THE SITE IS NOT RESPONSIBLE FOR THAT.THANK FOR YOUR SUPPORT.
+                   
+            
+                 <p> 
+                       <button type="reset" class ="r">RESET</button>
+                       <button type="submit" class="pn" >SUBMIT</button>
+                 </p> 
+</form>               
+</body>
+<script> 
+         
+            var n=document.getElementById
+            document.getElementById("name").innerHTML="NAME IS"+n.value;
+            var g=document.getElementById
+            document.getElementById("gender").innerHTML="GENDER IS"+g.value;
+            var a=document.getElementById
+            document.getElementById("address").innerHTML="ADDRESS IS"+a.value;
+            var e=document.getElementById
+            document.getElementById("email").innerHTML="EMAIL IS"+e.value;
+            var p=document.getElementById
+            document.getElementById("pincode").innerHTML="PINCODE IS"+p.value;
+            var pa=document.getElementById
+            document.getElementById("card-type").innerHTML="PAYMENT TYPE IS"+pa.value;
+            var ac=document.getElementById
+            document.getElementById("card number").innerHTML="ACCOUNT NO. IS"+ac.value;
+            var ex=document.getElementById
+            document.getElementById("exp date").innerHTML="EXPIRY DATE IS"+ex.value;
+
+</script>
+</html>
